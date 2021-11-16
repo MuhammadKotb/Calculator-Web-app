@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="Calculator.component.css">
+ 
+    <script>
+      
+    </script>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>
+            Calcualtor
+        </title>
+    </head>
+    
+    <body>
+
+        <div class = "calcualtor">
+            <p class = "exp">
+                {{this.expression.operand1}} {{this.expression.operator}} 
+            </p>
+            <div class = "calc">
+                <div class = "frame">
+                    
+                </div>
+                <div class = "head">
+                    <p class = "headname">
+                    </p>
+                </div>
+                
+                <div class = "screenbox">
+                    <p id = "input" class = "screenout">{{this.monitorOut}}</p>
+                </div>
+                    
+                <div class = "allbuttons" >
+                    <div class = "buttonsops1">
+                        <button id = "btmod" class = "buttonmod" (click) = "evalauteExpression('%')">%</button> 
+                        <button id = "btclrrecent" class = "buttonclrrecent" (click) = "readExpression('CE')">CE</button> 
+                        <button id = "btclrall" class = "buttonclrall" (click) = "readExpression('C')">C</button> 
+                        <button id = "bterase" class = "buttonerase" (click) = "readExpression('⌫')">⌫</button> 
+                    </div>
+                    <div class = "buttonsops2">
+                        <button id = "btreciprocle" class = "buttonreciprocle" (click) = "unaryEvaluation('1/x')">1/x</button>
+                        <button id = "btsqr" class = "buttonsqr" (click) = "unaryEvaluation('x²')">x²</button>
+                        <button id = "btroot" class = "buttonroot" (click) = "unaryEvaluation('√')">√</button>
+                        <button id = "btdiv" class = "buttondiv" (click) = "evalauteExpression('÷')">÷</button>
+                    </div>
+                    <div class = "buttons79">
+                        <button id = "bt7" class = "button7" (click) = "readExpression('7')">7</button>
+                        <button id = "bt8" class = "button8" (click) = "readExpression('8')">8</button>
+                        <button id = "bt9" class = "button9" (click) = "readExpression('9')">9</button>
+                        <button id = "bttimes" class = "buttontimes" (click) =  "evalauteExpression('×')">×</button>
+                    </div>
+            
+                    <div class = "buttons46">
+                        <button id = "bt4" class = "button4" (click) = "readExpression('4')">4</button>
+                        <button id = "bt5" class = "button5" (click) = "readExpression('5')">5</button>
+                        <button id = "bt6" class = "button6" (click) = "readExpression('6')">6</button>
+                        <button id = "btminus" class = "buttonminus" (click) = "evalauteExpression('-')">-</button>
+                    </div>
+            
+                    <div class = "buttons13">
+                        <button id = "bt1" class = "button1" (click) = "readExpression('1')">1</button>
+                        <button id = "bt2" class = "button2" (click) = "readExpression('2')">2</button>
+                        <button id = "bt3" class = "button3" (click) = "readExpression('3')">3</button>
+                        <button id = "btplus" class = "buttonplus" (click) = "evalauteExpression('+')">+</button>
+                    </div>
+            
+                    <div class = "buttons0">
+                        <button id = "btnegative" class = "buttonnegative" (click) = "readExpression('-')">±</button>
+                        <button id = "bt0" class = "button0" (click) = "readExpression('0')">0</button>
+                        <button id = "btdot" class = "buttondot" (click) = "readExpression('.')">.</button>
+                        <button id = "bueql" class = "buttoneql" (click) = "evalauteExpression('=')">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        
+  
+
+    </body>
+
+</html>
