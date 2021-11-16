@@ -87,10 +87,6 @@ export class Calculator implements OnInit{
             this.eqlpressed = false;
         }
 
-        else if(eqnTemp.length + 1 > 61){
-            eqnTemp = "";
-        }
-    
         if(input == '.'){
             
             
