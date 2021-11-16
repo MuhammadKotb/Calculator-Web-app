@@ -5,7 +5,7 @@ public class Calculator implements CalculatorI  {
     private boolean unaryOp;
     private String result;
 
-  
+    public Calculator(){}
 
 
     public String getResult() {
