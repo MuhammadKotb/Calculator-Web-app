@@ -7,10 +7,6 @@ public class Calculator implements CalculatorI  {
 
     public Calculator(){}
 
-    public Calculator(boolean unaryOp){
-        this.unaryOp = unaryOp;
-    }
-
 
     public String getResult() {
         return this.result;
